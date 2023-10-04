@@ -2,6 +2,7 @@ require('dotenv').config()
 const io = require("socket.io")(process.env.PORT, {
     cors: {
         origin: "https://server-gagan2325-docintosh.vercel.app",
+        methods: ["GET", "POST"]
     },
 });
 
